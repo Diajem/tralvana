@@ -57,7 +57,7 @@ export default function HeroSection() {
         </h1>
 
         <p className="text-base max-w-2xl mx-auto mb-6 leading-relaxed" style={{ color: '#FFFFFF' }}>
-          Flights, hotels, tours and experiences across Africa, Caribbean, Europe, Americas and beyond. One platform. Every destination.
+          Africa · Caribbean · Europe · Americas · Beyond
         </p>
 
         <div className="flex flex-col sm:flex-row gap-3 justify-center mb-8">

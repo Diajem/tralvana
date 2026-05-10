@@ -61,7 +61,7 @@ export default function Navbar() {
             <img
               src="/logo.png"
               alt="Tralvana"
-              style={{ height: '65px', width: 'auto', objectFit: 'contain', display: 'block' }}
+              style={{ height: '65px', minHeight: '50px', width: 'auto', objectFit: 'contain', display: 'block' }}
             />
           </Link>
 
@@ -195,7 +195,7 @@ export default function Navbar() {
             className="lg:hidden p-2"
             style={{ color: '#1F2937' }}
           >
-            {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            {isOpen ? <X size={28} color="#1F2937" /> : <Menu size={28} color="#1F2937" />}
           </button>
         </div>
       </div>
