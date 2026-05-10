@@ -9,12 +9,12 @@ export const metadata = {
 }
 
 const islands = [
-  { name: 'Jamaica', image: '/image/WhatsApp%20Image%202026-05-10%20at%2010.44.10.jpeg', highlight: 'Negril · Montego Bay · Kingston' },
+  { name: 'Jamaica', image: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=400&q=80', highlight: 'Negril · Montego Bay · Kingston' },
   { name: 'Barbados', image: 'https://images.unsplash.com/photo-1580902394724-b08ff9f97c46?w=400&q=80', highlight: 'Bridgetown · Oistins · Crane Beach' },
   { name: 'Bahamas', image: 'https://images.unsplash.com/photo-1548574505-5e239809ee19?w=400&q=80', highlight: 'Nassau · Paradise Island · Exumas' },
-  { name: 'Antigua', image: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400&q=80', highlight: "St John's · English Harbour · 365 Beaches" },
-  { name: 'Trinidad', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', highlight: 'Port of Spain · Carnival · Maracas Bay' },
-  { name: 'St Lucia', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&q=80', highlight: 'Castries · Pitons · Rodney Bay' },
+  { name: 'Antigua', image: 'https://images.unsplash.com/photo-1597655601841-214a4cfe8b2c?w=400&q=80', highlight: "St John's · English Harbour · 365 Beaches" },
+  { name: 'Trinidad', image: 'https://images.unsplash.com/photo-1621544402532-78e18f72c67f?w=400&q=80', highlight: 'Port of Spain · Carnival · Maracas Bay' },
+  { name: 'St Lucia', image: 'https://images.unsplash.com/photo-1524786828573-54c7d01ee32f?w=400&q=80', highlight: 'Castries · Pitons · Rodney Bay' },
 ]
 
 export default function CaribbeanPage() {
