@@ -83,7 +83,7 @@ export const AFFILIATES = {
 
   // ── SANDALS (Caribbean) ───────────────────────────────────
   sandals: {
-    base: process.env.NEXT_PUBLIC_SANDALS_AFFILIATE || '#sandals-placeholder',
+    base: process.env.NEXT_PUBLIC_SANDALS_AFFILIATE || 'https://www.sandals.com',
   },
 
   // ── SAFARI.COM (Africa) ───────────────────────────────────
@@ -93,7 +93,7 @@ export const AFFILIATES = {
 
   // ── PRIORITY PASS ─────────────────────────────────────────
   priorityPass: {
-    base: process.env.NEXT_PUBLIC_PRIORITYPASS_AFFILIATE || '#prioritypass-placeholder',
+    base: process.env.NEXT_PUBLIC_PRIORITYPASS_AFFILIATE || 'https://www.prioritypass.com/en/affiliates',
   },
 
   // ── HOLAFLY eSIM ──────────────────────────────────────────

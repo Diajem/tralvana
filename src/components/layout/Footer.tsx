@@ -63,10 +63,10 @@ export default function Footer() {
             {/* Social */}
             <div className="flex gap-3">
               {[
-                { icon: Instagram, href: '#' },
-                { icon: Youtube, href: '#' },
-                { icon: Facebook, href: '#' },
-                { icon: Twitter, href: '#' },
+                { icon: Instagram, href: 'https://www.instagram.com/tralvana' },
+                { icon: Youtube, href: 'https://www.youtube.com/@tralvana' },
+                { icon: Facebook, href: 'https://www.facebook.com/tralvana' },
+                { icon: Twitter, href: 'https://www.twitter.com/tralvana' },
               ].map(({ icon: Icon, href }, i) => (
                 <a
                   key={i}

@@ -78,7 +78,7 @@ const posts: Record<string, PostData> = {
         <H2>Which Parish Should You Stay In?</H2>
         <P><B>Negril</B> (Westmoreland) is the classic beach destination — flat, calm, endless white sand; ideal for first-timers. <B>Montego Bay</B> has the broadest choice of all-inclusive resorts. <B>Ocho Rios</B> puts you closest to Dunns River Falls. <B>Kingston</B> is the cultural heartbeat — music, food and the real Jamaica.</P>
 
-        <AffiliateBox href={AFFILIATES.expedia.flights} label="Search Flights to Jamaica" note="Compare UK to Montego Bay (MBJ) and Kingston (KIN) — Heathrow, Gatwick and Manchester" />
+        <AffiliateBox href="https://tp.media/r?marker=493614&trs=432320&p=4114&u=https%3A%2F%2Fwww.aviasales.com" label="Search Flights to Jamaica" note="Compare UK to Montego Bay (MBJ) and Kingston (KIN) — Heathrow, Gatwick and Manchester" />
 
         <H2>The Verdict</H2>
         <P>Best overall: <B>mid-January to mid-April</B> — post-Christmas quiet, dry season reliability, reasonable (not cheap) prices. Best value: October to early December. Best for music lovers: July for Sumfest. Whatever time you go, Jamaica will be warm, welcoming and worth every penny.</P>
