@@ -55,7 +55,7 @@ export default function AfricaPage() {
           <h2 className="font-display text-3xl font-bold text-white mb-6">Top <span className="text-gold-gradient">Destinations</span></h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {destinations.map((dest) => (
-              <Link key={dest.name} href={`/destinations/${dest.name.toLowerCase()}`} className="group relative overflow-hidden rounded-2xl hover-lift gold-border" style={{ height: '200px' }}>
+              <Link key={dest.name} href={`/destinations/${dest.name.toLowerCase().replace(/\s+/g, '-')}`} className="group relative overflow-hidden rounded-2xl hover-lift gold-border" style={{ height: '200px' }}>
                 <div className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" style={{ backgroundImage: `url(${dest.image})` }} />
                 <div className="absolute inset-0 bg-gradient-to-t from-tralvana-black/90 to-transparent" />
                 <div className="absolute top-3 left-3 text-xl">{dest.flag}</div>
@@ -80,7 +80,7 @@ export default function AfricaPage() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {[{ emoji: '🦁', title: 'Safari Packages', desc: 'Kenya · Tanzania · South Africa · Botswana', href: AFFILIATES.safari.base },
-            { emoji: '✈', title: 'Flights to Africa', desc: 'London · Manchester · Birmingham to all African hubs', href: AFFILIATES.expedia.flights },
+            { emoji: '✈', title: 'Flights to Africa', desc: 'London · Manchester · Birmingham to all African hubs', href: 'https://tp.media/r?marker=493614&trs=432320&p=4114&u=https%3A%2F%2Fwww.aviasales.com' },
             { emoji: '🏖', title: 'Beach Resorts', desc: 'Zanzibar · Mombasa · Cape Verde · Seychelles', href: AFFILIATES.expedia.hotels }
           ].map((card) => (
             <a key={card.title} href={card.href} target="_blank" rel="noopener noreferrer sponsored" className="glass-card rounded-xl p-5 gold-border hover-lift text-center">

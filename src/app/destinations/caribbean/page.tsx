@@ -109,53 +109,34 @@ export default function CaribbeanPage() {
         </div>
 
         {/* Goddiva — Holiday Fashion Card */}
-        <div style={{
-          margin: '40px 0',
-          padding: '24px 28px',
-          background: 'linear-gradient(135deg, #1a1a2e 0%, #16213e 100%)',
-          borderRadius: '16px',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'space-between',
-          gap: '20px',
-          flexWrap: 'wrap',
-          border: '1px solid rgba(201,168,76,0.3)'
-        }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
-            <div style={{ fontSize: '2.5rem' }}>👗</div>
-            <div>
-              <div style={{ fontSize: '11px', color: '#C9A84C', textTransform: 'uppercase', letterSpacing: '2px', marginBottom: '4px' }}>
-                Holiday Fashion
+        <a
+          href="https://www.awin1.com/cread.php?s=3861519&v=2894&q=512085&r=1773696"
+          target="_blank"
+          rel="noopener noreferrer sponsored"
+          style={{ display: 'block', textDecoration: 'none' }}
+        >
+          <div style={{ position: 'relative', borderRadius: '16px', overflow: 'hidden', marginTop: '40px', height: '200px' }}>
+            <img
+              src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=1200&q=80"
+              alt="Goddiva Holiday Fashion"
+              style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+            />
+            <div style={{
+              position: 'absolute', inset: 0,
+              background: 'linear-gradient(to right, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 100%)',
+              display: 'flex', alignItems: 'center', padding: '32px', justifyContent: 'space-between'
+            }}>
+              <div>
+                <p style={{ color: '#C9A84C', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '2px', marginBottom: '8px' }}>Holiday Fashion Partner</p>
+                <h3 style={{ color: 'white', fontSize: '1.5rem', fontWeight: '700', fontFamily: 'Playfair Display, serif', marginBottom: '4px' }}>Goddiva</h3>
+                <p style={{ color: '#E5E7EB', fontSize: '14px' }}>Dresses &amp; resort wear for your Caribbean holiday</p>
               </div>
-              <div style={{ fontSize: '1.1rem', fontWeight: '700', color: 'white', fontFamily: 'Playfair Display, serif', marginBottom: '4px' }}>
-                Goddiva — Shop Holiday Styles
-              </div>
-              <div style={{ fontSize: '13px', color: '#9CA3AF' }}>
-                Dresses, swimwear &amp; resort wear perfect for your Caribbean holiday
+              <div style={{ background: '#C9A84C', color: '#0A0A0F', padding: '12px 24px', borderRadius: '8px', fontWeight: '700', fontSize: '13px', whiteSpace: 'nowrap', flexShrink: 0 }}>
+                Shop Now →
               </div>
             </div>
           </div>
-          <a
-            href="https://www.awin1.com/cread.php?s=3861519&v=2894&q=512085&r=1773696"
-            target="_blank"
-            rel="noopener noreferrer sponsored"
-            style={{
-              background: '#C9A84C',
-              color: '#0A0A0F',
-              padding: '12px 24px',
-              borderRadius: '10px',
-              fontWeight: '700',
-              textDecoration: 'none',
-              fontSize: '13px',
-              textTransform: 'uppercase',
-              letterSpacing: '1px',
-              whiteSpace: 'nowrap',
-              flexShrink: 0
-            }}
-          >
-            Shop Now →
-          </a>
-        </div>
+        </a>
 
         {/* Sandals Promo */}
         <div className="relative overflow-hidden rounded-2xl gold-border p-8 text-center"

@@ -140,7 +140,7 @@ export default function SportsPage() {
             <p className="text-tralvana-muted text-sm leading-relaxed mb-4">
               Following your club or national team to Europe, the Americas or Africa? Champions League away days, World Cup 2026 in the USA, AFCON packages — we cover the full itinerary from any UK airport.
             </p>
-            <a href={AFFILIATES.expedia.flights} target="_blank" rel="noopener noreferrer sponsored"
+            <a href="https://tp.media/r?marker=493614&trs=432320&p=4114&u=https%3A%2F%2Fwww.aviasales.com" target="_blank" rel="noopener noreferrer sponsored"
               className="inline-flex px-5 py-2.5 border border-tralvana-gold text-tralvana-gold text-sm font-semibold rounded-xl hover:bg-tralvana-gold/10 transition-all">
               Search Flights →
             </a>
@@ -151,7 +151,7 @@ export default function SportsPage() {
         <div className="glass-card rounded-2xl p-6 gold-border text-center">
           <p className="text-tralvana-muted text-sm mb-4">Book flights and hotels for upcoming sports events now while dedicated packages are being prepared</p>
           <div className="flex flex-wrap gap-3 justify-center">
-            <a href={AFFILIATES.expedia.flights} target="_blank" rel="noopener noreferrer sponsored" className="px-5 py-2.5 bg-tralvana-gold text-tralvana-black text-sm font-semibold rounded-xl hover:bg-tralvana-gold-light transition-all">✈ Book Flights</a>
+            <a href="https://tp.media/r?marker=493614&trs=432320&p=4114&u=https%3A%2F%2Fwww.aviasales.com" target="_blank" rel="noopener noreferrer sponsored" className="px-5 py-2.5 bg-tralvana-gold text-tralvana-black text-sm font-semibold rounded-xl hover:bg-tralvana-gold-light transition-all">✈ Book Flights</a>
             <a href={AFFILIATES.expedia.hotels} target="_blank" rel="noopener noreferrer sponsored" className="px-5 py-2.5 border border-tralvana-gold text-tralvana-gold text-sm font-semibold rounded-xl hover:bg-tralvana-gold/10 transition-all">🏨 Book Hotels</a>
             <a href={AFFILIATES.expedia.cars} target="_blank" rel="noopener noreferrer sponsored" className="px-5 py-2.5 border border-tralvana-border text-tralvana-muted text-sm font-semibold rounded-xl hover:border-tralvana-gold hover:text-tralvana-gold transition-all">🚗 Book Car Hire</a>
           </div>

@@ -101,7 +101,7 @@ const posts: Record<string, PostData> = {
         <P><B>British Airways</B> flies direct from Heathrow to Lagos (LOS), Accra (ACC), Nairobi (NBO), Johannesburg (JNB), Cape Town (CPT) and Dar es Salaam (DAR). BA is typically the priciest option but offers consistent service and good baggage allowances on long-haul routes.</P>
         <P><B>Virgin Atlantic</B> operates direct flights to Lagos from Heathrow and is often competitive on price with BA during sales. <B>Kenya Airways</B> flies Heathrow–Nairobi direct; their Dreamliner cabin is excellent for the price. <B>South African Airways</B> and <B>Comair</B> operate on the London–Johannesburg route alongside BA.</P>
 
-        <AffiliateBox href={AFFILIATES.expedia.flights} label="Search UK to Africa Flights" note="Compare BA, Virgin, Emirates, Ethiopian, Kenya Airways and more on one search" />
+        <AffiliateBox href="https://tp.media/r?marker=493614&trs=432320&p=4114&u=https%3A%2F%2Fwww.aviasales.com" label="Search UK to Africa Flights" note="Compare BA, Virgin, Emirates, Ethiopian, Kenya Airways and more on one search" />
 
         <H2>One-Stop via the Gulf: The Smart Money Route</H2>
         <P>Routing through a Gulf hub consistently delivers the lowest fares and excellent in-flight product, even to destinations with direct options.</P>
@@ -141,7 +141,7 @@ const posts: Record<string, PostData> = {
       <>
         <P>The beauty of living in the UK is that you're within two hours of some of the world's most extraordinary cities. Whether you want cobblestoned historic districts, gallery-hopping or simply sunshine and exceptional food, Europe delivers — and most of it is within a short flight or a Eurostar journey.</P>
 
-        <AffiliateBox href={AFFILIATES.expedia.flights} label="Search European Flights" note="Compare prices from all UK airports to 50+ European cities" />
+        <AffiliateBox href="https://tp.media/r?marker=493614&trs=432320&p=4114&u=https%3A%2F%2Fwww.aviasales.com" label="Search European Flights" note="Compare prices from all UK airports to 50+ European cities" />
 
         <H2>1. Paris, France — The Perennial Classic</H2>
         <P>Two hours twenty minutes on Eurostar from St Pancras — no airport faff, arriving in the heart of the city. The Louvre, Montmartre, the Seine at dusk and the best croissants in the known universe. Post-Olympics infrastructure improvements have made Paris even better to navigate in 2026. Book the Eurostar at least 3 weeks ahead for the best fares.</P>
@@ -216,7 +216,7 @@ const posts: Record<string, PostData> = {
         <P>Every Premier League city rewards more than football. A Liverpool trip pairs perfectly with the Beatles Story museum and the Albert Dock food scene. Manchester's Ancoats and Northern Quarter are among the best neighbourhoods for eating and drinking in England. For London — the whole city is on your doorstep.</P>
         <P>Consider booking for a midweek fixture — flights and hotels are significantly cheaper Tuesday–Wednesday, and Champions League or Europa League nights in English grounds are often the most electric atmospheric experiences in European football.</P>
 
-        <AffiliateBox href={AFFILIATES.expedia.flights} label="Search Flights to UK Cities" note="London, Manchester, Liverpool, Newcastle — all major Premier League cities" />
+        <AffiliateBox href="https://tp.media/r?marker=493614&trs=432320&p=4114&u=https%3A%2F%2Fwww.aviasales.com" label="Search Flights to UK Cities" note="London, Manchester, Liverpool, Newcastle — all major Premier League cities" />
       </>
     ),
   },
@@ -240,7 +240,7 @@ const posts: Record<string, PostData> = {
         <P>The <B>Dubai Fountain</B> at Dubai Mall runs every evening from 6pm — entirely free and genuinely spectacular. <B>Jumeirah Beach</B> is a free public beach with views of the Burj Al Arab. The <B>Spice Souk</B> and <B>Gold Souk</B> in Deira are free to wander. The traditional <B>abra</B> (wooden water taxi) crossing of Dubai Creek costs just 1 dirham (about 20p) — one of the best travel experiences in the Middle East.</P>
         <P>The <B>Dubai Frame</B> observation landmark costs around £10 and offers one of the best 360° views in the city. The <B>Dubai Creek Heritage Village</B> in Deira is free and provides authentic context for the pre-oil emirate.</P>
 
-        <AffiliateBox href={AFFILIATES.expedia.flights} label="Search Flights to Dubai" note="Compare prices from Heathrow, Gatwick, Manchester, Birmingham and more" />
+        <AffiliateBox href="https://tp.media/r?marker=493614&trs=432320&p=4114&u=https%3A%2F%2Fwww.aviasales.com" label="Search Flights to Dubai" note="Compare prices from Heathrow, Gatwick, Manchester, Birmingham and more" />
 
         <H2>Where to Stay on a Budget</H2>
         <P>Stay in <B>Deira</B> (northern Dubai) rather than Downtown or the Marina. Deira has excellent 3- and 4-star hotels at significantly lower prices, direct Metro access, and authentic access to the souqs and creek. <B>Al Barsha</B> (near Mall of the Emirates) is another smart choice — well-connected by Metro, surrounded by mid-range restaurants, much cheaper than Downtown for equivalent quality.</P>
@@ -301,7 +301,7 @@ const posts: Record<string, PostData> = {
         <H2>Drinks Packages: Worth It?</H2>
         <P>Do the maths honestly. Most lines charge £8–£14 per cocktail without a package. A package costs £50–£90 per person per day and covers all beverages. If you'll have more than 5–6 drinks per day, a package saves money. Note: on most lines, both people in a cabin must purchase the same package — important if one of you doesn't drink.</P>
 
-        <AffiliateBox href={AFFILIATES.expedia.flights} label="Search Flights to Cruise Ports" note="Fly to Miami, Fort Lauderdale, San Juan or Barbados to join your cruise" />
+        <AffiliateBox href="https://tp.media/r?marker=493614&trs=432320&p=4114&u=https%3A%2F%2Fwww.aviasales.com" label="Search Flights to Cruise Ports" note="Fly to Miami, Fort Lauderdale, San Juan or Barbados to join your cruise" />
 
         <H2>Getting the Best Price</H2>
         <P>Book early for the best cabin selection; book late (30–60 days before sailing) for the best remaining inventory price. The sweet spot is 90–120 days out — early-booking discounts apply but good categories haven't sold out. Watch for sales in January (New Year deals), Black Friday, Cyber Monday and September (post-school-holiday window).</P>
@@ -439,7 +439,7 @@ const posts: Record<string, PostData> = {
         <P><B>Tipping:</B> 18–20% on all restaurant bills is standard, not optional.</P>
         <P><B>Reservations:</B> Book popular restaurants 2–3 days in advance on OpenTable or Resy. Walk-in dinner at good NYC restaurants is increasingly rare.</P>
 
-        <AffiliateBox href={AFFILIATES.expedia.flights} label="Search Flights to New York" note="Compare UK airports to JFK, Newark and LaGuardia" />
+        <AffiliateBox href="https://tp.media/r?marker=493614&trs=432320&p=4114&u=https%3A%2F%2Fwww.aviasales.com" label="Search Flights to New York" note="Compare UK airports to JFK, Newark and LaGuardia" />
       </>
     ),
   },

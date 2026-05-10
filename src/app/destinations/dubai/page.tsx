@@ -35,7 +35,7 @@ export default function DubaiPage() {
         </p>
 
         <a
-          href="https://expedia.com/affiliate/mZObD29"
+          href="https://tp.media/r?marker=493614&trs=432320&p=4114&u=https%3A%2F%2Fwww.aviasales.com"
           target="_blank" rel="noopener noreferrer sponsored"
           className="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-semibold text-sm mb-10"
           style={{ background: '#C9A84C', color: '#0A0A0F' }}

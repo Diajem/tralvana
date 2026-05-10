@@ -6,18 +6,18 @@ export default function ShopPage() {
   const { config } = useCurrency()
 
   const categories = [
-    { title: 'Luggage & Suitcases', search: 'travel luggage suitcase hard shell', emoji: '🧳', desc: 'Hard shell, soft case, carry-on and checked luggage for every journey and budget' },
-    { title: 'Packing Cubes & Organisers', search: 'packing cubes travel organiser', emoji: '📦', desc: 'Keep your suitcase organised with compression packing cubes and travel organisers' },
-    { title: 'Universal Travel Adapters', search: 'universal travel adapter multi port USB', emoji: '🔌', desc: 'Stay charged in 150+ countries with multi-port USB and USB-C travel adapters' },
-    { title: 'Noise-Cancelling Headphones', search: 'noise cancelling headphones travel', emoji: '🎧', desc: 'Block out engine noise on long-haul flights with premium noise-cancelling headphones' },
-    { title: 'Portable Chargers & Power Banks', search: 'portable charger power bank travel', emoji: '🔋', desc: 'Never run out of battery — compact power banks for phones, tablets and laptops' },
-    { title: 'Travel Wallets & Passport Holders', search: 'travel wallet passport holder RFID', emoji: '📔', desc: 'RFID-blocking passport holders and travel wallets to keep documents safe' },
-    { title: 'Toiletry & Wash Bags', search: 'travel toiletry bag TSA approved wash bag', emoji: '🪥', desc: 'TSA-approved toiletry bags, clear zip pouches and hanging wash bags' },
-    { title: 'Luggage Scales & Locks', search: 'luggage scale TSA lock travel', emoji: '⚖️', desc: 'Avoid overweight baggage fees with digital luggage scales and TSA-approved locks' },
-    { title: 'Neck Pillows & Sleep Masks', search: 'travel neck pillow memory foam sleep mask', emoji: '😴', desc: 'Sleep comfortably on long flights with memory foam neck pillows and blackout eye masks' },
-    { title: 'Travel Backpacks', search: 'travel backpack carry on cabin bag', emoji: '🎒', desc: 'Cabin-approved travel backpacks for weekend breaks and carry-on only travel' },
-    { title: 'Water Bottles & Hydration', search: 'insulated water bottle travel hydration', emoji: '💧', desc: 'Stay hydrated on the go with insulated stainless steel water bottles' },
-    { title: 'Camera & Photography Gear', search: 'travel camera action camera accessories', emoji: '📸', desc: 'Capture every moment — action cameras, gimbals, camera bags and accessories' },
+    { title: 'Luggage & Suitcases', search: 'travel luggage suitcase hard shell', emoji: '🧳', image: 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400&q=80', desc: 'Hard shell, soft case, carry-on and checked luggage' },
+    { title: 'Packing Cubes', search: 'packing cubes travel organiser', emoji: '📦', image: 'https://images.unsplash.com/photo-1590736969955-71cc94901144?w=400&q=80', desc: 'Compression packing cubes and travel organisers' },
+    { title: 'Universal Adapters', search: 'universal travel adapter multi port USB', emoji: '🔌', image: 'https://images.unsplash.com/photo-1544117519-31a4b719223d?w=400&q=80', desc: 'Stay charged in 150+ countries' },
+    { title: 'Noise-Cancelling Headphones', search: 'noise cancelling headphones travel', emoji: '🎧', image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&q=80', desc: 'Block engine noise on long-haul flights' },
+    { title: 'Portable Chargers', search: 'portable charger power bank travel', emoji: '🔋', image: 'https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?w=400&q=80', desc: 'Compact power banks for all devices' },
+    { title: 'Travel Wallets', search: 'travel wallet passport holder RFID', emoji: '📔', image: 'https://images.unsplash.com/photo-1517456093218-f9d8ed22b6e7?w=400&q=80', desc: 'RFID-blocking passport holders and wallets' },
+    { title: 'Toiletry Bags', search: 'travel toiletry bag TSA approved', emoji: '🪥', image: 'https://images.unsplash.com/photo-1523293182086-7651a899d37f?w=400&q=80', desc: 'TSA-approved toiletry and wash bags' },
+    { title: 'Neck Pillows', search: 'travel neck pillow memory foam sleep mask', emoji: '😴', image: 'https://images.unsplash.com/photo-1520080816374-2f1d8e5c0b40?w=400&q=80', desc: 'Memory foam pillows and blackout eye masks' },
+    { title: 'Travel Backpacks', search: 'travel backpack carry on cabin bag', emoji: '🎒', image: 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400&q=80', desc: 'Cabin-approved backpacks for weekend breaks' },
+    { title: 'Water Bottles', search: 'insulated water bottle travel', emoji: '💧', image: 'https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=400&q=80', desc: 'Insulated stainless steel water bottles' },
+    { title: 'Camera Gear', search: 'travel camera action camera accessories', emoji: '📸', image: 'https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=400&q=80', desc: 'Action cameras, gimbals and accessories' },
+    { title: 'Luggage Scales & Locks', search: 'luggage scale TSA lock travel', emoji: '⚖️', image: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=400&q=80', desc: 'Avoid overweight fees with digital scales' },
   ]
 
   const regionLabel = config.amazonRegion === 'UK' ? '🇬🇧 Amazon UK' : config.amazonRegion === 'US' ? '🇺🇸 Amazon US' : `🇪🇺 Amazon ${config.amazonRegion}`
@@ -67,18 +67,25 @@ export default function ShopPage() {
               href={buildAmazonLink('', config.amazonRegion, cat.search)}
               target="_blank"
               rel="noopener noreferrer sponsored"
-              className="group glass-card rounded-2xl p-5 gold-border hover-lift flex flex-col gap-3"
+              className="group glass-card rounded-2xl gold-border hover-lift overflow-hidden flex flex-col"
             >
-              <div className="flex items-start justify-between">
-                <span className="text-3xl">{cat.emoji}</span>
-                <span className="text-xs text-tralvana-muted group-hover:text-tralvana-gold transition-colors">Shop →</span>
-              </div>
-              <div>
-                <h3 className="font-display font-semibold text-white mb-1 group-hover:text-tralvana-gold transition-colors">{cat.title}</h3>
-                <p className="text-tralvana-muted text-sm leading-relaxed">{cat.desc}</p>
-              </div>
-              <div className="text-xs text-tralvana-gold font-medium mt-auto">
-                View on {regionLabel}
+              <img
+                src={cat.image}
+                alt={cat.title}
+                style={{ width: '100%', height: '180px', objectFit: 'cover', borderRadius: '8px 8px 0 0', marginBottom: '12px' }}
+              />
+              <div className="flex flex-col gap-3 p-5 flex-1">
+                <div className="flex items-start justify-between">
+                  <span className="text-3xl">{cat.emoji}</span>
+                  <span className="text-xs text-tralvana-muted group-hover:text-tralvana-gold transition-colors">Shop →</span>
+                </div>
+                <div>
+                  <h3 className="font-display font-semibold text-white mb-1 group-hover:text-tralvana-gold transition-colors">{cat.title}</h3>
+                  <p className="text-tralvana-muted text-sm leading-relaxed">{cat.desc}</p>
+                </div>
+                <div className="text-xs text-tralvana-gold font-medium mt-auto">
+                  View on {regionLabel}
+                </div>
               </div>
             </a>
           ))}
