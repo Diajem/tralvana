@@ -54,7 +54,7 @@ export default function Footer() {
               <img
                 src="/logo.png"
                 alt="Tralvana"
-                className="h-8 w-auto"
+                style={{ height: '36px', width: 'auto', objectFit: 'contain' }}
               />
             </Link>
             <p className="text-tralvana-muted text-sm leading-relaxed mb-6">

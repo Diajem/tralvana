@@ -37,6 +37,7 @@ export default function RootLayout({
         <meta name="theme-color" content="#0A0A0F" />
         <link rel="icon" href="/logo.png" />
         <link rel="apple-touch-icon" href="/logo.png" />
+        <link rel="shortcut icon" href="/logo.png" />
       </head>
       <body className={`${inter.className} bg-white text-gray-900 antialiased`}>
         <CurrencyProvider>

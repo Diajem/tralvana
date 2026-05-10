@@ -58,7 +58,11 @@ export default function Navbar() {
 
           {/* Logo */}
           <Link href="/" className="flex items-center">
-            <img src="/logo.png" alt="Tralvana" className="h-10 w-auto" />
+            <img
+              src="/logo.png"
+              alt="Tralvana"
+              style={{ height: '45px', width: 'auto', objectFit: 'contain' }}
+            />
           </Link>
 
           {/* Desktop Nav */}
