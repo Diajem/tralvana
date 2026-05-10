@@ -1,0 +1,154 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-black: #0A0A0F;
+  --color-dark: #10101A;
+  --color-card: #16162A;
+  --color-border: #2A2A4A;
+  --color-gold: #C9A84C;
+  --color-gold-light: #E8C96A;
+  --color-ivory: #F5F0E8;
+  --color-muted: #8A8AA0;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #FFFFFF;
+  color: #1F2937;
+  font-family: 'DM Sans', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── SCROLLBAR ─────────────────────────────── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #F3F4F6; }
+::-webkit-scrollbar-thumb { background: var(--color-gold); border-radius: 3px; }
+
+/* ── TYPOGRAPHY ────────────────────────────── */
+.font-display { font-family: 'Playfair Display', Georgia, serif; }
+
+h1, h2, h3 { font-family: 'Playfair Display', Georgia, serif; }
+
+/* ── GOLD GRADIENT TEXT ─────────────────────── */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #C9A84C 0%, #E8C96A 50%, #C9A84C 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ── GOLD SHIMMER ANIMATION ─────────────────── */
+.gold-shimmer {
+  background: linear-gradient(90deg, #C9A84C 0%, #E8C96A 50%, #C9A84C 100%);
+  background-size: 200% 100%;
+  animation: shimmer 3s infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+/* ── GLASS CARD ─────────────────────────────── */
+.glass-card {
+  background: rgba(22, 22, 42, 0.8);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(42, 42, 74, 0.6);
+}
+
+/* ── HOVER LIFT ─────────────────────────────── */
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+}
+
+/* ── GOLD BORDER ────────────────────────────── */
+.gold-border {
+  border: 1px solid rgba(201, 168, 76, 0.3);
+}
+.gold-border:hover {
+  border-color: rgba(201, 168, 76, 0.7);
+}
+
+/* ── SECTION PADDING ─────────────────────────── */
+.section-padding {
+  padding: 80px 0;
+}
+
+@media (max-width: 768px) {
+  .section-padding { padding: 48px 0; }
+}
+
+/* ── FADE UP ANIMATION ───────────────────────── */
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── SEARCH TABS ─────────────────────────────── */
+.search-tab {
+  padding: 10px 20px;
+  border-radius: 8px 8px 0 0;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: var(--color-muted);
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+.search-tab.active {
+  background: var(--color-gold);
+  color: var(--color-black);
+}
+.search-tab:hover:not(.active) {
+  color: var(--color-gold);
+}
+
+/* ── DESTINATION CARD IMAGE ──────────────────── */
+.dest-card-img {
+  transition: transform 0.5s ease;
+}
+.dest-card:hover .dest-card-img {
+  transform: scale(1.08);
+}
+
+/* ── MOBILE APP STYLES ───────────────────────── */
+@media (max-width: 640px) {
+  .hero-title { font-size: 2.5rem !important; }
+}
+
+/* ── PWA Install Prompt ───────────────────────── */
+.pwa-prompt {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--color-card);
+  border: 1px solid var(--color-gold);
+  border-radius: 12px;
+  padding: 16px 24px;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+}

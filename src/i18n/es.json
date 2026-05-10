@@ -1,0 +1,63 @@
+{
+  "nav": {
+    "flights": "Vuelos",
+    "hotels": "Hoteles",
+    "cars": "Alquiler de Coches",
+    "tours": "Tours",
+    "destinations": "Destinos",
+    "tv": "Tralvana TV",
+    "blog": "Blog",
+    "shop": "Tienda de Viaje",
+    "sports": "Viajes Deportivos"
+  },
+  "hero": {
+    "tagline": "Tu Mundo Empieza Aquí",
+    "subtitle": "Vuelos, hoteles, tours y experiencias en todo el mundo. África, Caribe, Europa, Américas y más allá.",
+    "search_flights": "Buscar Vuelos",
+    "search_hotels": "Buscar Hoteles",
+    "search_cars": "Alquiler de Coches",
+    "search_tours": "Tours y Experiencias"
+  },
+  "destinations": {
+    "title": "¿Adónde Quieres Ir?",
+    "subtitle": "Explora destinos seleccionados en todos los continentes",
+    "caribbean": "Caribe",
+    "africa": "África",
+    "europe": "Europa",
+    "americas": "Américas",
+    "asia": "Asia Pacífico",
+    "middle_east": "Oriente Medio",
+    "sports": "Viajes Deportivos"
+  },
+  "tv": {
+    "title": "Tralvana TV",
+    "subtitle": "Mira viajes reales, experiencias de clientes, cruceros y guías de destinos"
+  },
+  "blog": {
+    "title": "Guías de Viaje e Inspiración",
+    "subtitle": "Consejos de expertos, guías de destinos e historias de viajes de todo el mundo",
+    "read_more": "Leer Más"
+  },
+  "shop": {
+    "title": "Tienda de Viaje",
+    "subtitle": "Todo lo que necesitas antes de volar — equipaje, adaptadores, accesorios y más"
+  },
+  "footer": {
+    "tagline": "Tu Mundo Empieza Aquí",
+    "about": "Sobre Tralvana",
+    "contact": "Contáctanos",
+    "privacy": "Política de Privacidad",
+    "terms": "Términos y Condiciones",
+    "affiliates": "Divulgación de Afiliados"
+  },
+  "common": {
+    "book_now": "Reservar Ahora",
+    "learn_more": "Saber Más",
+    "view_all": "Ver Todo",
+    "from": "Desde",
+    "per_night": "por noche",
+    "per_day": "por día",
+    "loading": "Cargando...",
+    "search": "Buscar"
+  }
+}

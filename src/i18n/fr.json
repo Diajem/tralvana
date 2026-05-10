@@ -1,0 +1,63 @@
+{
+  "nav": {
+    "flights": "Vols",
+    "hotels": "Hôtels",
+    "cars": "Location de Voiture",
+    "tours": "Circuits",
+    "destinations": "Destinations",
+    "tv": "Tralvana TV",
+    "blog": "Blog",
+    "shop": "Boutique Voyage",
+    "sports": "Voyages Sportifs"
+  },
+  "hero": {
+    "tagline": "Votre Monde Commence Ici",
+    "subtitle": "Vols, hôtels, circuits et expériences dans le monde entier. Afrique, Caraïbes, Europe, Amériques et au-delà.",
+    "search_flights": "Rechercher des Vols",
+    "search_hotels": "Rechercher des Hôtels",
+    "search_cars": "Location de Voiture",
+    "search_tours": "Circuits et Expériences"
+  },
+  "destinations": {
+    "title": "Où Voulez-Vous Aller?",
+    "subtitle": "Explorez des destinations soigneusement sélectionnées sur tous les continents",
+    "caribbean": "Caraïbes",
+    "africa": "Afrique",
+    "europe": "Europe",
+    "americas": "Amériques",
+    "asia": "Asie-Pacifique",
+    "middle_east": "Moyen-Orient",
+    "sports": "Voyages Sportifs"
+  },
+  "tv": {
+    "title": "Tralvana TV",
+    "subtitle": "Regardez de vrais voyages, des expériences clients, des croisières et des guides de destinations"
+  },
+  "blog": {
+    "title": "Guides de Voyage et Inspiration",
+    "subtitle": "Conseils d'experts, guides de destinations et récits de voyage du monde entier",
+    "read_more": "Lire la Suite"
+  },
+  "shop": {
+    "title": "Boutique Voyage",
+    "subtitle": "Tout ce dont vous avez besoin avant de prendre l'avion — bagages, adaptateurs, accessoires et plus"
+  },
+  "footer": {
+    "tagline": "Votre Monde Commence Ici",
+    "about": "À Propos de Tralvana",
+    "contact": "Nous Contacter",
+    "privacy": "Politique de Confidentialité",
+    "terms": "Conditions Générales",
+    "affiliates": "Divulgation des Affiliés"
+  },
+  "common": {
+    "book_now": "Réserver Maintenant",
+    "learn_more": "En Savoir Plus",
+    "view_all": "Voir Tout",
+    "from": "À partir de",
+    "per_night": "par nuit",
+    "per_day": "par jour",
+    "loading": "Chargement...",
+    "search": "Rechercher"
+  }
+}

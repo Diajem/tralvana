@@ -1,0 +1,63 @@
+{
+  "nav": {
+    "flights": "Flights",
+    "hotels": "Hotels",
+    "cars": "Car Hire",
+    "tours": "Tours",
+    "destinations": "Destinations",
+    "tv": "Tralvana TV",
+    "blog": "Blog",
+    "shop": "Travel Shop",
+    "sports": "Sports Travel"
+  },
+  "hero": {
+    "tagline": "Your World Starts Here",
+    "subtitle": "Flights, hotels, tours and experiences worldwide. Africa, Caribbean, Europe, Americas and beyond.",
+    "search_flights": "Search Flights",
+    "search_hotels": "Search Hotels",
+    "search_cars": "Car Hire",
+    "search_tours": "Tours & Experiences"
+  },
+  "destinations": {
+    "title": "Where Do You Want To Go?",
+    "subtitle": "Explore handpicked destinations across every continent",
+    "caribbean": "Caribbean",
+    "africa": "Africa",
+    "europe": "Europe",
+    "americas": "Americas",
+    "asia": "Asia Pacific",
+    "middle_east": "Middle East",
+    "sports": "Sports Travel"
+  },
+  "tv": {
+    "title": "Tralvana TV",
+    "subtitle": "Watch real journeys, client travels, cruise experiences and destination guides"
+  },
+  "blog": {
+    "title": "Travel Guides & Inspiration",
+    "subtitle": "Expert tips, destination guides and travel stories from around the world",
+    "read_more": "Read More"
+  },
+  "shop": {
+    "title": "Travel Shop",
+    "subtitle": "Everything you need before you fly — luggage, adapters, accessories and more"
+  },
+  "footer": {
+    "tagline": "Your World Starts Here",
+    "about": "About Tralvana",
+    "contact": "Contact Us",
+    "privacy": "Privacy Policy",
+    "terms": "Terms & Conditions",
+    "affiliates": "Affiliate Disclosure"
+  },
+  "common": {
+    "book_now": "Book Now",
+    "learn_more": "Learn More",
+    "view_all": "View All",
+    "from": "From",
+    "per_night": "per night",
+    "per_day": "per day",
+    "loading": "Loading...",
+    "search": "Search"
+  }
+}
