@@ -93,7 +93,7 @@ export const AFFILIATES = {
 
   // ── PRIORITY PASS ─────────────────────────────────────────
   priorityPass: {
-    base: process.env.NEXT_PUBLIC_PRIORITYPASS_AFFILIATE || 'https://www.prioritypass.com/en/affiliates',
+    base: process.env.NEXT_PUBLIC_PRIORITYPASS_AFFILIATE || 'https://www.prioritypass.com/affiliates',
   },
 
   // ── HOLAFLY eSIM ──────────────────────────────────────────

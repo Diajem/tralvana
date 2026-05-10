@@ -21,7 +21,7 @@ export default function HeroSection() {
   }, [])
 
   return (
-    <section className="relative h-[60vh] min-h-[400px] flex items-center justify-center overflow-hidden">
+    <section className="relative h-screen max-h-[600px] md:max-h-none flex items-center justify-center overflow-hidden" style={{ borderBottom: '2px solid #C9A84C' }}>
       {slides.map((slide, i) => (
         <div
           key={i}
@@ -34,7 +34,7 @@ export default function HeroSection() {
           }}
         />
       ))}
-      <div className="absolute inset-0" style={{ background: 'rgba(0,0,0,0.2)' }} />
+      <div className="absolute inset-0" style={{ background: 'rgba(0,0,0,0.45)' }} />
 
       <div className="absolute top-24 right-8 flex items-center gap-2 px-3 py-1.5 rounded-full" style={{ background: 'rgba(22,22,42,0.8)', border: '1px solid rgba(201,168,76,0.4)' }}>
         <div className="w-2 h-2 rounded-full animate-pulse" style={{ background: '#C9A84C' }} />
@@ -51,20 +51,20 @@ export default function HeroSection() {
         <h1 className="font-display font-bold text-white mb-4" style={{ fontSize: 'clamp(2rem, 5vw, 3.5rem)', lineHeight: 1.1 }}>
           Your World
           <br />
-          <span style={{ background: 'linear-gradient(135deg, #C9A84C, #E8C96A, #C9A84C)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
+          <span style={{ color: '#C9A84C' }}>
             Starts Here
           </span>
         </h1>
 
-        <p className="text-base max-w-2xl mx-auto mb-6 leading-relaxed" style={{ color: 'rgba(255,255,255,0.85)' }}>
+        <p className="text-base max-w-2xl mx-auto mb-6 leading-relaxed" style={{ color: '#FFFFFF' }}>
           Flights, hotels, tours and experiences across Africa, Caribbean, Europe, Americas and beyond. One platform. Every destination.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-3 justify-center mb-8">
-          <a href="#search" className="px-6 py-2.5 font-semibold rounded-xl text-sm uppercase tracking-wider" style={{ background: '#C9A84C', color: '#0A0A0F' }}>
+          <a href="#search" className="px-6 py-2.5 font-semibold text-sm uppercase tracking-wider" style={{ background: '#C9A84C', color: '#0A0A0F', borderRadius: '8px' }}>
             Start Planning
           </a>
-          <Link href="/destinations" className="px-6 py-2.5 font-semibold rounded-xl text-sm uppercase tracking-wider" style={{ border: '1px solid rgba(255,255,255,0.6)', color: '#FFFFFF' }}>
+          <Link href="/destinations" className="px-6 py-2.5 font-semibold text-sm uppercase tracking-wider" style={{ border: '1px solid #FFFFFF', color: '#FFFFFF', borderRadius: '8px' }}>
             Explore Destinations
           </Link>
         </div>

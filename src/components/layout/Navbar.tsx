@@ -61,7 +61,7 @@ export default function Navbar() {
             <img
               src="/logo.png"
               alt="Tralvana"
-              style={{ height: '45px', width: 'auto', objectFit: 'contain' }}
+              style={{ height: '65px', width: 'auto', objectFit: 'contain', display: 'block' }}
             />
           </Link>
 
