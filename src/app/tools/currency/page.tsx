@@ -1,8 +1,6 @@
 'use client'
 import { useState, useEffect } from 'react'
 
-export const metadata = undefined // client component — set in layout or head tag
-
 const CURRENCIES = [
   { code: 'GBP', symbol: '£',    name: 'British Pound',          flag: '🇬🇧' },
   { code: 'USD', symbol: '$',    name: 'US Dollar',              flag: '🇺🇸' },
