@@ -1,173 +1,228 @@
 'use client'
+import { buildAmazonLink } from '@/lib/currency'
+import { useCurrency } from '@/lib/CurrencyContext'
 
 const products = [
   {
-    name: 'Luggage & Suitcases',
+    title: 'Luggage & Suitcases',
+    search: 'travel luggage suitcase',
+    image: 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=500&q=80',
     badge: 'Best Seller',
-    category: 'Travel Essential',
-    description: 'Hard shell, soft case, carry-on and checked luggage for every journey',
-    image: 'https://images.unsplash.com/photo-1565026057447-bc90a3dceb87?w=400&h=300&fit=crop',
-    url: 'https://www.amazon.co.uk/s?k=travel+luggage+suitcase&tag=diajemglobal-21',
+    desc: 'Hard shell, soft case, carry-on and checked luggage for every journey',
+    tag: 'Travel Essential',
   },
   {
-    name: 'Packing Cubes',
+    title: 'Packing Cubes',
+    search: 'packing cubes travel organiser set',
+    image: 'https://images.unsplash.com/photo-1590736969955-71cc94901144?w=500&q=80',
     badge: 'Top Rated',
-    category: 'Organisation',
-    description: 'Compression packing cubes to maximise suitcase space',
-    image: 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400&h=300&fit=crop',
-    url: 'https://www.amazon.co.uk/s?k=packing+cubes+travel+organiser+set&tag=diajemglobal-21',
+    desc: 'Compression packing cubes to maximise suitcase space',
+    tag: 'Organisation',
   },
   {
-    name: 'Universal Travel Adapters',
+    title: 'Universal Travel Adapters',
+    search: 'universal travel adapter multi port USB',
+    image: 'https://images.unsplash.com/photo-1544117519-31a4b719223d?w=500&q=80',
     badge: '150+ Countries',
-    category: 'Tech Essential',
-    description: 'Multi-port USB and USB-C adapters that work worldwide',
-    image: 'https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?w=400&h=300&fit=crop',
-    url: 'https://www.amazon.co.uk/s?k=universal+travel+adapter+multi+port+USB&tag=diajemglobal-21',
+    desc: 'Multi-port USB and USB-C adapters that work worldwide',
+    tag: 'Tech Essential',
   },
   {
-    name: 'Noise-Cancelling Headphones',
+    title: 'Noise-Cancelling Headphones',
+    search: 'noise cancelling headphones travel',
+    image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&q=80',
     badge: 'Premium',
-    category: 'Audio',
-    description: 'Block engine noise on long-haul flights to Jamaica, Dubai and beyond',
-    image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=300&fit=crop',
-    url: 'https://www.amazon.co.uk/s?k=noise+cancelling+headphones+travel&tag=diajemglobal-21',
+    desc: 'Block engine noise on long-haul flights to Jamaica, Dubai and beyond',
+    tag: 'Audio',
   },
   {
-    name: 'Portable Power Banks',
+    title: 'Portable Power Banks',
+    search: 'portable charger power bank travel',
+    image: 'https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?w=500&q=80',
     badge: 'Must Have',
-    category: 'Tech',
-    description: 'Compact power banks to keep all your devices charged on the go',
-    image: 'https://images.unsplash.com/photo-1609592806596-b9d6f7e9e8b8?w=400&h=300&fit=crop',
-    url: 'https://www.amazon.co.uk/s?k=portable+charger+power+bank+travel&tag=diajemglobal-21',
+    desc: 'Compact power banks to keep all your devices charged on the go',
+    tag: 'Tech',
   },
   {
-    name: 'Travel Wallets & Passport Holders',
+    title: 'Travel Wallets & Passport Holders',
+    search: 'travel wallet passport holder RFID blocking',
+    image: 'https://images.unsplash.com/photo-1517456093218-f9d8ed22b6e7?w=500&q=80',
     badge: 'RFID Safe',
-    category: 'Security',
-    description: 'RFID-blocking passport holders and slim travel wallets',
-    image: 'https://images.unsplash.com/photo-1614267861476-0d129972a0f4?w=400&h=300&fit=crop',
-    url: 'https://www.amazon.co.uk/s?k=travel+wallet+passport+holder+RFID+blocking&tag=diajemglobal-21',
+    desc: 'RFID-blocking passport holders and slim travel wallets',
+    tag: 'Security',
   },
   {
-    name: 'Toiletry & Wash Bags',
+    title: 'Toiletry & Wash Bags',
+    search: 'travel toiletry bag TSA approved',
+    image: 'https://images.unsplash.com/photo-1523293182086-7651a899d37f?w=500&q=80',
     badge: 'TSA Approved',
-    category: 'Toiletries',
-    description: 'TSA-approved clear zip bags and hanging wash bags',
-    image: 'https://images.unsplash.com/photo-1571781926291-c477ebfd024b?w=400&h=300&fit=crop',
-    url: 'https://www.amazon.co.uk/s?k=travel+toiletry+bag+TSA+approved&tag=diajemglobal-21',
+    desc: 'TSA-approved clear zip bags and hanging wash bags',
+    tag: 'Toiletries',
   },
   {
-    name: 'Luggage Scales & Locks',
+    title: 'Luggage Scales & Locks',
+    search: 'luggage scale digital TSA lock',
+    image: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=500&q=80',
     badge: 'Save Money',
-    category: 'Smart Travel',
-    description: 'Avoid overweight baggage fees with digital luggage scales',
-    image: 'https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=400&h=300&fit=crop',
-    url: 'https://www.amazon.co.uk/s?k=luggage+scale+digital+TSA+lock&tag=diajemglobal-21',
+    desc: 'Avoid overweight baggage fees with digital luggage scales',
+    tag: 'Smart Travel',
   },
   {
-    name: 'Neck Pillows & Sleep Masks',
+    title: 'Neck Pillows & Sleep Masks',
+    search: 'travel neck pillow memory foam sleep mask',
+    image: 'https://images.unsplash.com/photo-1520080816374-2f1d8e5c0b40?w=500&q=80',
     badge: 'Comfort',
-    category: 'Comfort',
-    description: 'Sleep better on long-haul flights with memory foam pillows',
-    image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=300&fit=crop',
-    url: 'https://www.amazon.co.uk/s?k=travel+neck+pillow+memory+foam+sleep+mask&tag=diajemglobal-21',
+    desc: 'Sleep better on long-haul flights with memory foam pillows',
+    tag: 'Comfort',
   },
   {
-    name: 'Travel Backpacks',
+    title: 'Travel Backpacks',
+    search: 'travel backpack cabin approved carry on',
+    image: 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=500&q=80',
     badge: 'Cabin Approved',
-    category: 'Luggage',
-    description: 'Lightweight cabin-approved backpacks for carry-on only travel',
-    image: 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400&h=300&fit=crop',
-    url: 'https://www.amazon.co.uk/s?k=travel+backpack+cabin+approved+carry+on&tag=diajemglobal-21',
+    desc: 'Lightweight cabin-approved backpacks for carry-on only travel',
+    tag: 'Luggage',
   },
   {
-    name: 'Insulated Water Bottles',
+    title: 'Insulated Water Bottles',
+    search: 'insulated water bottle travel stainless steel',
+    image: 'https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=500&q=80',
     badge: 'Eco Friendly',
-    category: 'Hydration',
-    description: 'Keep drinks hot or cold for 24 hours with insulated bottles',
-    image: 'https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=400&h=300&fit=crop',
-    url: 'https://www.amazon.co.uk/s?k=insulated+water+bottle+travel+stainless+steel&tag=diajemglobal-21',
+    desc: 'Keep drinks hot or cold for 24 hours with insulated bottles',
+    tag: 'Hydration',
   },
   {
-    name: 'Action Cameras & Gear',
+    title: 'Action Cameras & Gear',
+    search: 'action camera travel photography accessories',
+    image: 'https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=500&q=80',
     badge: 'Capture Everything',
-    category: 'Photography',
-    description: 'Action cameras, gimbals and accessories for your travel adventures',
-    image: 'https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=400&h=300&fit=crop',
-    url: 'https://www.amazon.co.uk/s?k=action+camera+travel+photography+accessories&tag=diajemglobal-21',
+    desc: 'Action cameras, gimbals and accessories for your travel adventures',
+    tag: 'Photography',
   },
 ]
 
 export default function ShopPage() {
+  const { config } = useCurrency()
+
+  const regionLabel: Record<string, string> = {
+    UK: '🇬🇧 Amazon UK',
+    US: '🇺🇸 Amazon US',
+    DE: '🇩🇪 Amazon DE',
+    FR: '🇫🇷 Amazon FR',
+    ES: '🇪🇸 Amazon ES',
+    IT: '🇮🇹 Amazon IT',
+  }
+
+  const label = regionLabel[config.amazonRegion] ?? '🇬🇧 Amazon UK'
+
   return (
-    <main>
-      {/* Hero */}
-      <section className="py-16 text-center border-b border-white/10">
-        <p className="text-sm uppercase tracking-widest text-[#C9A84C] mb-3">Travel Shop</p>
-        <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-          Pack Smart. Travel Better.
+    <div style={{ minHeight: '100vh', background: '#F8F9FA', paddingTop: '80px' }}>
+
+      {/* Header */}
+      <div style={{ background: 'white', padding: '48px 20px 40px', borderBottom: '1px solid #E5E7EB', textAlign: 'center' }}>
+        <p style={{ color: '#C9A84C', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '3px', marginBottom: '12px' }}>Travel Shop</p>
+        <h1 style={{ fontFamily: 'Playfair Display, serif', fontSize: '2.5rem', fontWeight: '700', color: '#1F2937', marginBottom: '12px' }}>
+          Pack Smart. <span style={{ color: '#C9A84C' }}>Travel Better.</span>
         </h1>
-        <p className="text-white/60 max-w-xl mx-auto text-lg">
+        <p style={{ color: '#6B7280', maxWidth: '500px', margin: '0 auto 20px', lineHeight: '1.6' }}>
           Curated travel gear for every journey. Everything you need before you fly — all available on Amazon with fast delivery.
         </p>
-        <p className="mt-4 text-white/40 text-sm">Currently showing: <strong className="text-white/60">🇬🇧 Amazon UK</strong></p>
-      </section>
+        <p style={{ fontSize: '13px', color: '#9CA3AF' }}>
+          Currently showing: <strong style={{ color: '#C9A84C' }}>{label}</strong>
+        </p>
+      </div>
 
-      {/* Product Grid */}
-      <section className="max-w-7xl mx-auto px-4 py-16">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+      {/* Products Grid */}
+      <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '40px 20px' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '24px' }}>
           {products.map((product) => (
-            <div
-              key={product.name}
-              className="bg-white/5 border border-white/10 rounded-2xl overflow-hidden hover:border-[#C9A84C]/50 transition-all duration-300 hover:-translate-y-1 flex flex-col"
+            <a
+              key={product.title}
+              href={buildAmazonLink('', config.amazonRegion, product.search)}
+              target="_blank"
+              rel="noopener noreferrer sponsored"
+              style={{ textDecoration: 'none', display: 'block' }}
             >
-              {/* Image */}
-              <div className="relative overflow-hidden h-48">
-                <img
-                  src={product.image}
-                  alt={product.name}
-                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
-                  loading="lazy"
-                />
-                <div className="absolute top-3 left-3 flex gap-2">
-                  <span className="bg-[#C9A84C] text-black text-xs font-semibold px-2 py-1 rounded-full">
+              <div
+                style={{
+                  background: 'white',
+                  borderRadius: '16px',
+                  overflow: 'hidden',
+                  boxShadow: '0 2px 12px rgba(0,0,0,0.08)',
+                  border: '1px solid #F3F4F6',
+                  transition: 'transform 0.2s, box-shadow 0.2s',
+                  cursor: 'pointer',
+                  height: '100%',
+                }}
+                onMouseEnter={e => {
+                  e.currentTarget.style.transform = 'translateY(-4px)'
+                  e.currentTarget.style.boxShadow = '0 8px 30px rgba(0,0,0,0.15)'
+                }}
+                onMouseLeave={e => {
+                  e.currentTarget.style.transform = 'translateY(0)'
+                  e.currentTarget.style.boxShadow = '0 2px 12px rgba(0,0,0,0.08)'
+                }}
+              >
+                {/* Image */}
+                <div style={{ position: 'relative', height: '200px', overflow: 'hidden' }}>
+                  <img
+                    src={product.image}
+                    alt={product.title}
+                    style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                  />
+                  <div style={{
+                    position: 'absolute', top: '12px', left: '12px',
+                    background: '#C9A84C', color: '#0A0A0F',
+                    padding: '4px 10px', borderRadius: '20px',
+                    fontSize: '11px', fontWeight: '700', textTransform: 'uppercase', letterSpacing: '0.5px',
+                  }}>
                     {product.badge}
-                  </span>
+                  </div>
+                  <div style={{
+                    position: 'absolute', top: '12px', right: '12px',
+                    background: 'rgba(0,0,0,0.6)', color: 'white',
+                    padding: '4px 10px', borderRadius: '20px',
+                    fontSize: '10px', fontWeight: '600',
+                  }}>
+                    {product.tag}
+                  </div>
                 </div>
-                <div className="absolute top-3 right-3">
-                  <span className="bg-black/60 text-white/80 text-xs px-2 py-1 rounded-full backdrop-blur-sm">
-                    {product.category}
-                  </span>
-                </div>
-              </div>
 
-              {/* Content */}
-              <div className="p-4 flex flex-col flex-1">
-                <h3 className="text-white font-semibold text-base mb-1 leading-snug">
-                  {product.name}
-                </h3>
-                <p className="text-white/50 text-sm flex-1 mb-4 leading-relaxed">
-                  {product.description}
-                </p>
-                <a
-                  href={product.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block w-full text-center bg-[#FF9900] hover:bg-[#e68a00] text-black font-bold text-sm py-2.5 px-4 rounded-lg transition-colors duration-200"
-                >
-                  Shop on Amazon 🇬🇧
-                </a>
+                {/* Info */}
+                <div style={{ padding: '16px 20px 20px' }}>
+                  <h3 style={{
+                    fontFamily: 'Playfair Display, serif',
+                    fontSize: '1rem', fontWeight: '700',
+                    color: '#1F2937', marginBottom: '8px', lineHeight: '1.3',
+                  }}>
+                    {product.title}
+                  </h3>
+                  <p style={{ fontSize: '13px', color: '#6B7280', lineHeight: '1.5', marginBottom: '16px' }}>
+                    {product.desc}
+                  </p>
+                  <div style={{
+                    display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+                    padding: '10px 14px', background: '#FF9900',
+                    borderRadius: '8px', color: '#0A0A0F',
+                    fontWeight: '700', fontSize: '13px',
+                  }}>
+                    <span>Shop on Amazon</span>
+                    <span style={{ fontSize: '16px' }}>→</span>
+                  </div>
+                </div>
               </div>
-            </div>
+            </a>
           ))}
         </div>
 
         {/* Disclosure */}
-        <p className="text-center text-white/30 text-xs mt-12 max-w-2xl mx-auto">
-          <strong className="text-white/50">Amazon Associates Disclosure:</strong> As an Amazon Associate, Tralvana earns from qualifying purchases. Prices shown on Amazon may vary. You pay the same price — we earn a small commission that helps keep Tralvana free to use.
-        </p>
-      </section>
-    </main>
+        <div style={{ marginTop: '48px', padding: '20px', background: 'white', borderRadius: '12px', textAlign: 'center', border: '1px solid #E5E7EB' }}>
+          <p style={{ fontSize: '12px', color: '#9CA3AF', lineHeight: '1.6' }}>
+            <strong style={{ color: '#6B7280' }}>Amazon Associates Disclosure:</strong> As an Amazon Associate, Tralvana earns from qualifying purchases.
+            Prices shown on Amazon may vary. You pay the same price — we earn a small commission that helps keep Tralvana free to use.
+          </p>
+        </div>
+      </div>
+    </div>
   )
 }
