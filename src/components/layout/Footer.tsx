@@ -134,12 +134,12 @@ export default function Footer() {
           <p className="text-xs text-tralvana-muted">
             Built by{' '}
             <a
-              href="https://diajemmarketing.com"
+              href="https://www.diajemdigital.com"
               target="_blank"
               rel="noopener noreferrer"
               className="text-tralvana-gold hover:underline"
             >
-              Diajem Marketing
+              Diajem Digital
             </a>
           </p>
         </div>
