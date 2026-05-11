@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://tralvana.com/</loc><priority>1.0</priority></url>
+  <url><loc>https://tralvana.com/flights</loc><priority>0.9</priority></url>
+  <url><loc>https://tralvana.com/hotels</loc><priority>0.9</priority></url>
+  <url><loc>https://tralvana.com/cars</loc><priority>0.9</priority></url>
+  <url><loc>https://tralvana.com/tours</loc><priority>0.9</priority></url>
+  <url><loc>https://tralvana.com/destinations</loc><priority>0.9</priority></url>
+  <url><loc>https://tralvana.com/destinations/caribbean</loc><priority>0.8</priority></url>
+  <url><loc>https://tralvana.com/destinations/africa</loc><priority>0.8</priority></url>
+  <url><loc>https://tralvana.com/destinations/europe</loc><priority>0.8</priority></url>
+  <url><loc>https://tralvana.com/destinations/americas</loc><priority>0.8</priority></url>
+  <url><loc>https://tralvana.com/destinations/asia</loc><priority>0.8</priority></url>
+  <url><loc>https://tralvana.com/destinations/middle-east</loc><priority>0.8</priority></url>
+  <url><loc>https://tralvana.com/destinations/jamaica</loc><priority>0.7</priority></url>
+  <url><loc>https://tralvana.com/destinations/barbados</loc><priority>0.7</priority></url>
+  <url><loc>https://tralvana.com/destinations/lagos</loc><priority>0.7</priority></url>
+  <url><loc>https://tralvana.com/destinations/accra</loc><priority>0.7</priority></url>
+  <url><loc>https://tralvana.com/destinations/nairobi</loc><priority>0.7</priority></url>
+  <url><loc>https://tralvana.com/destinations/cape-town</loc><priority>0.7</priority></url>
+  <url><loc>https://tralvana.com/destinations/dubai</loc><priority>0.7</priority></url>
+  <url><loc>https://tralvana.com/destinations/paris</loc><priority>0.7</priority></url>
+  <url><loc>https://tralvana.com/destinations/new-york</loc><priority>0.7</priority></url>
+  <url><loc>https://tralvana.com/blog</loc><priority>0.8</priority></url>
+  <url><loc>https://tralvana.com/blog/best-time-to-visit-jamaica</loc><priority>0.7</priority></url>
+  <url><loc>https://tralvana.com/blog/uk-to-africa-flight-guide</loc><priority>0.7</priority></url>
+  <url><loc>https://tralvana.com/blog/europe-weekend-breaks-from-uk</loc><priority>0.7</priority></url>
+  <url><loc>https://tralvana.com/sports</loc><priority>0.8</priority></url>
+  <url><loc>https://tralvana.com/shop</loc><priority>0.8</priority></url>
+  <url><loc>https://tralvana.com/tv</loc><priority>0.7</priority></url>
+  <url><loc>https://tralvana.com/about</loc><priority>0.6</priority></url>
+  <url><loc>https://tralvana.com/contact</loc><priority>0.6</priority></url>
+  <url><loc>https://tralvana.com/tools/currency</loc><priority>0.6</priority></url>
+  <url><loc>https://tralvana.com/tools/checklist</loc><priority>0.6</priority></url>
+</urlset>
