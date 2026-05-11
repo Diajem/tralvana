@@ -40,7 +40,7 @@ export default function RootLayout({
         <link rel="shortcut icon" href="/logo.png" />
       </head>
       <body className={`${inter.className} bg-white text-gray-900 antialiased`}>
-        {/* Tralvana v1.1 - Full site update */}
+        {/* Tralvana v1.2 - CSS rebuild trigger */}
         <CurrencyProvider>
           <Navbar />
           <main>{children}</main>
