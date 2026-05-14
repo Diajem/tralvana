@@ -1,1 +1,3 @@
-
+<IfModule LiteSpeed>
+CacheLookup off
+</IfModule>
