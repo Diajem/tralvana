@@ -6,7 +6,7 @@ const products = [
   {
     title: 'Luggage & Suitcases',
     search: 'travel luggage suitcase',
-    image: 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=500&q=80',
+    image: 'https://images.unsplash.com/photo-1565026057447-bc90a3dceb87?w=400&h=250&fit=crop',
     badge: 'Best Seller',
     desc: 'Hard shell, soft case, carry-on and checked luggage for every journey',
     tag: 'Travel Essential',
@@ -14,7 +14,7 @@ const products = [
   {
     title: 'Packing Cubes',
     search: 'packing cubes travel organiser set',
-    image: 'https://images.unsplash.com/photo-1590736969955-71cc94901144?w=500&q=80',
+    image: 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400&h=250&fit=crop',
     badge: 'Top Rated',
     desc: 'Compression packing cubes to maximise suitcase space',
     tag: 'Organisation',
@@ -22,7 +22,7 @@ const products = [
   {
     title: 'Universal Travel Adapters',
     search: 'universal travel adapter multi port USB',
-    image: 'https://images.unsplash.com/photo-1544117519-31a4b719223d?w=500&q=80',
+    image: 'https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?w=400&h=250&fit=crop',
     badge: '150+ Countries',
     desc: 'Multi-port USB and USB-C adapters that work worldwide',
     tag: 'Tech Essential',
@@ -30,7 +30,7 @@ const products = [
   {
     title: 'Noise-Cancelling Headphones',
     search: 'noise cancelling headphones travel',
-    image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&q=80',
+    image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=250&fit=crop',
     badge: 'Premium',
     desc: 'Block engine noise on long-haul flights to Jamaica, Dubai and beyond',
     tag: 'Audio',
@@ -38,7 +38,7 @@ const products = [
   {
     title: 'Portable Power Banks',
     search: 'portable charger power bank travel',
-    image: 'https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?w=500&q=80',
+    image: 'https://images.unsplash.com/photo-1609592806596-b9d6f7e9e8b8?w=400&h=250&fit=crop',
     badge: 'Must Have',
     desc: 'Compact power banks to keep all your devices charged on the go',
     tag: 'Tech',
@@ -46,7 +46,7 @@ const products = [
   {
     title: 'Travel Wallets & Passport Holders',
     search: 'travel wallet passport holder RFID blocking',
-    image: 'https://images.unsplash.com/photo-1517456093218-f9d8ed22b6e7?w=500&q=80',
+    image: 'https://images.unsplash.com/photo-1614267861476-0d129972a0f4?w=400&h=250&fit=crop',
     badge: 'RFID Safe',
     desc: 'RFID-blocking passport holders and slim travel wallets',
     tag: 'Security',
@@ -54,7 +54,7 @@ const products = [
   {
     title: 'Toiletry & Wash Bags',
     search: 'travel toiletry bag TSA approved',
-    image: 'https://images.unsplash.com/photo-1523293182086-7651a899d37f?w=500&q=80',
+    image: 'https://images.unsplash.com/photo-1571781926291-c477ebfd024b?w=400&h=250&fit=crop',
     badge: 'TSA Approved',
     desc: 'TSA-approved clear zip bags and hanging wash bags',
     tag: 'Toiletries',
@@ -62,7 +62,7 @@ const products = [
   {
     title: 'Luggage Scales & Locks',
     search: 'luggage scale digital TSA lock',
-    image: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=500&q=80',
+    image: 'https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=400&h=250&fit=crop',
     badge: 'Save Money',
     desc: 'Avoid overweight baggage fees with digital luggage scales',
     tag: 'Smart Travel',
@@ -70,7 +70,7 @@ const products = [
   {
     title: 'Neck Pillows & Sleep Masks',
     search: 'travel neck pillow memory foam sleep mask',
-    image: 'https://images.unsplash.com/photo-1520080816374-2f1d8e5c0b40?w=500&q=80',
+    image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=250&fit=crop',
     badge: 'Comfort',
     desc: 'Sleep better on long-haul flights with memory foam pillows',
     tag: 'Comfort',
@@ -78,7 +78,7 @@ const products = [
   {
     title: 'Travel Backpacks',
     search: 'travel backpack cabin approved carry on',
-    image: 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=500&q=80',
+    image: 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400&h=250&fit=crop',
     badge: 'Cabin Approved',
     desc: 'Lightweight cabin-approved backpacks for carry-on only travel',
     tag: 'Luggage',
@@ -86,7 +86,7 @@ const products = [
   {
     title: 'Insulated Water Bottles',
     search: 'insulated water bottle travel stainless steel',
-    image: 'https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=500&q=80',
+    image: 'https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=400&h=250&fit=crop',
     badge: 'Eco Friendly',
     desc: 'Keep drinks hot or cold for 24 hours with insulated bottles',
     tag: 'Hydration',
@@ -94,7 +94,7 @@ const products = [
   {
     title: 'Action Cameras & Gear',
     search: 'action camera travel photography accessories',
-    image: 'https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=500&q=80',
+    image: 'https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=400&h=250&fit=crop',
     badge: 'Capture Everything',
     desc: 'Action cameras, gimbals and accessories for your travel adventures',
     tag: 'Photography',
