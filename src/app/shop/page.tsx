@@ -6,7 +6,7 @@ const products = [
   {
     title: 'Luggage & Suitcases',
     search: 'travel luggage suitcase',
-    image: 'https://images.unsplash.com/photo-1565026057447-bc90a3dceb87?w=400&h=250&fit=crop',
+    image: 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400&h=250&fit=crop',
     badge: 'Best Seller',
     desc: 'Hard shell, soft case, carry-on and checked luggage for every journey',
     tag: 'Travel Essential',
@@ -14,7 +14,7 @@ const products = [
   {
     title: 'Packing Cubes',
     search: 'packing cubes travel organiser set',
-    image: 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400&h=250&fit=crop',
+    image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=250&fit=crop',
     badge: 'Top Rated',
     desc: 'Compression packing cubes to maximise suitcase space',
     tag: 'Organisation',
@@ -22,7 +22,7 @@ const products = [
   {
     title: 'Universal Travel Adapters',
     search: 'universal travel adapter multi port USB',
-    image: 'https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?w=400&h=250&fit=crop',
+    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=250&fit=crop',
     badge: '150+ Countries',
     desc: 'Multi-port USB and USB-C adapters that work worldwide',
     tag: 'Tech Essential',
@@ -46,7 +46,7 @@ const products = [
   {
     title: 'Travel Wallets & Passport Holders',
     search: 'travel wallet passport holder RFID blocking',
-    image: 'https://images.unsplash.com/photo-1614267861476-0d129972a0f4?w=400&h=250&fit=crop',
+    image: 'https://images.unsplash.com/photo-1553531384-397c80973a0b?w=400&h=250&fit=crop',
     badge: 'RFID Safe',
     desc: 'RFID-blocking passport holders and slim travel wallets',
     tag: 'Security',
@@ -54,7 +54,7 @@ const products = [
   {
     title: 'Toiletry & Wash Bags',
     search: 'travel toiletry bag TSA approved',
-    image: 'https://images.unsplash.com/photo-1571781926291-c477ebfd024b?w=400&h=250&fit=crop',
+    image: 'https://images.unsplash.com/photo-1520006403909-838d6b92c22e?w=400&h=250&fit=crop',
     badge: 'TSA Approved',
     desc: 'TSA-approved clear zip bags and hanging wash bags',
     tag: 'Toiletries',
@@ -62,7 +62,7 @@ const products = [
   {
     title: 'Luggage Scales & Locks',
     search: 'luggage scale digital TSA lock',
-    image: 'https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=400&h=250&fit=crop',
+    image: 'https://images.unsplash.com/photo-1578328819058-b69f3a3b0f6b?w=400&h=250&fit=crop',
     badge: 'Save Money',
     desc: 'Avoid overweight baggage fees with digital luggage scales',
     tag: 'Smart Travel',
@@ -70,7 +70,7 @@ const products = [
   {
     title: 'Neck Pillows & Sleep Masks',
     search: 'travel neck pillow memory foam sleep mask',
-    image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=250&fit=crop',
+    image: 'https://images.unsplash.com/photo-1519710164239-da123dc03ef4?w=400&h=250&fit=crop',
     badge: 'Comfort',
     desc: 'Sleep better on long-haul flights with memory foam pillows',
     tag: 'Comfort',
@@ -78,7 +78,7 @@ const products = [
   {
     title: 'Travel Backpacks',
     search: 'travel backpack cabin approved carry on',
-    image: 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400&h=250&fit=crop',
+    image: 'https://images.unsplash.com/photo-1622260614153-03223fb72052?w=400&h=250&fit=crop',
     badge: 'Cabin Approved',
     desc: 'Lightweight cabin-approved backpacks for carry-on only travel',
     tag: 'Luggage',
