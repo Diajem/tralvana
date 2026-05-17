@@ -6,7 +6,7 @@ const products = [
   {
     title: 'Luggage & Suitcases',
     search: 'travel luggage suitcase',
-    image: 'https://images.unsplash.com/photo-1486299267070-83823f5448dd?w=400&h=250&fit=crop',
+    image: '/images/shop/luggage.jpg',
     badge: 'Best Seller',
     desc: 'Hard shell, soft case, carry-on and checked luggage for every journey',
     tag: 'Travel Essential',
@@ -14,7 +14,7 @@ const products = [
   {
     title: 'Packing Cubes',
     search: 'packing cubes travel organiser set',
-    image: 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400&h=250&fit=crop',
+    image: '/images/shop/cobybold.jpg',
     badge: 'Top Rated',
     desc: 'Compression packing cubes to maximise suitcase space',
     tag: 'Organisation',
@@ -22,7 +22,7 @@ const products = [
   {
     title: 'Universal Travel Adapters',
     search: 'universal travel adapter multi port USB',
-    image: 'https://images.unsplash.com/photo-1601972599748-31a02ea8b08b?w=400&h=250&fit=crop',
+    image: '/images/shop/travel_adapter.jpg',
     badge: '150+ Countries',
     desc: 'Multi-port USB and USB-C adapters that work worldwide',
     tag: 'Tech Essential',
@@ -38,7 +38,7 @@ const products = [
   {
     title: 'Portable Power Banks',
     search: 'portable charger power bank travel',
-    image: 'https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=400&h=250&fit=crop',
+    image: '/images/shop/power.jpg',
     badge: 'Must Have',
     desc: 'Compact power banks to keep all your devices charged on the go',
     tag: 'Tech',
@@ -46,7 +46,7 @@ const products = [
   {
     title: 'Travel Wallets & Passport Holders',
     search: 'travel wallet passport holder RFID blocking',
-    image: 'https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=400&h=250&fit=crop',
+    image: '/images/shop/ppasport.jpg',
     badge: 'RFID Safe',
     desc: 'RFID-blocking passport holders and slim travel wallets',
     tag: 'Security',
@@ -54,7 +54,7 @@ const products = [
   {
     title: 'Toiletry & Wash Bags',
     search: 'travel toiletry bag TSA approved',
-    image: 'https://images.unsplash.com/photo-1583623025817-d180a2221d0a?w=400&h=250&fit=crop',
+    image: '/images/shop/wash.jpg',
     badge: 'TSA Approved',
     desc: 'TSA-approved clear zip bags and hanging wash bags',
     tag: 'Toiletries',
@@ -62,7 +62,7 @@ const products = [
   {
     title: 'Luggage Scales & Locks',
     search: 'luggage scale digital TSA lock',
-    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=250&fit=crop',
+    image: '/images/shop/scale.jpg',
     badge: 'Save Money',
     desc: 'Avoid overweight baggage fees with digital luggage scales',
     tag: 'Smart Travel',
@@ -70,7 +70,7 @@ const products = [
   {
     title: 'Neck Pillows & Sleep Masks',
     search: 'travel neck pillow memory foam sleep mask',
-    image: 'https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?w=400&h=250&fit=crop',
+    image: '/images/shop/sleeping_pillow.jpg',
     badge: 'Comfort',
     desc: 'Sleep better on long-haul flights with memory foam pillows',
     tag: 'Comfort',
@@ -78,7 +78,7 @@ const products = [
   {
     title: 'Travel Backpacks',
     search: 'travel backpack cabin approved carry on',
-    image: 'https://images.unsplash.com/photo-1622260614153-03223fb72052?w=400&h=250&fit=crop',
+    image: '/images/shop/travelling_back_back.jpg',
     badge: 'Cabin Approved',
     desc: 'Lightweight cabin-approved backpacks for carry-on only travel',
     tag: 'Luggage',
@@ -86,7 +86,7 @@ const products = [
   {
     title: 'Insulated Water Bottles',
     search: 'insulated water bottle travel stainless steel',
-    image: 'https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=400&h=250&fit=crop',
+    image: '/images/shop/water_bottle.jpg',
     badge: 'Eco Friendly',
     desc: 'Keep drinks hot or cold for 24 hours with insulated bottles',
     tag: 'Hydration',
@@ -94,7 +94,7 @@ const products = [
   {
     title: 'Action Cameras & Gear',
     search: 'action camera travel photography accessories',
-    image: 'https://images.unsplash.com/photo-1473968512647-3e447244af8f?w=400&h=250&fit=crop',
+    image: '/images/shop/Action_Camera.jpg',
     badge: 'Capture Everything',
     desc: 'Action cameras, gimbals and accessories for your travel adventures',
     tag: 'Photography',
