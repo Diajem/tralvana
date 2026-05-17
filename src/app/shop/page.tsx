@@ -164,11 +164,11 @@ export default function ShopPage() {
                 }}
               >
                 {/* Image */}
-                <div style={{ position: 'relative', height: '200px', overflow: 'hidden' }}>
+                <div style={{ position: 'relative', height: '192px', overflow: 'hidden' }}>
                   <img
                     src={product.image}
                     alt={product.title}
-                    style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                    style={{ width: '100%', height: '100%', objectFit: 'contain' }}
                   />
                   <div style={{
                     position: 'absolute', top: '12px', left: '12px',
