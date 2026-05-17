@@ -47,7 +47,7 @@ export default function NigeriaPage() {
         className="relative flex items-end"
         style={{
           height: '55vh', minHeight: '380px',
-          backgroundImage: 'url(https://images.unsplash.com/photo-1555990793-da11153b9a71?w=1400&q=80)',
+          backgroundImage: 'url(https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?w=1400&q=80)',
           backgroundSize: 'cover', backgroundPosition: 'center',
         }}
       >
