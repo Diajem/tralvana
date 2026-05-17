@@ -9,12 +9,12 @@ export const metadata = {
 }
 
 const destinations = [
-  { name: 'Lagos', country: 'Nigeria', flag: '🇳🇬', image: 'https://images.unsplash.com/photo-1534430480872-3498386e7856?w=400&q=80', highlight: 'Eko Atlantic · Victoria Island · Lekki' },
-  { name: 'Accra', country: 'Ghana', flag: '🇬🇭', image: 'https://images.unsplash.com/photo-1569913486515-b74bf7751574?w=400&q=80', highlight: 'Osu · Labadi Beach · Cape Coast' },
-  { name: 'Nairobi', country: 'Kenya', flag: '🇰🇪', image: 'https://images.unsplash.com/photo-1611348586804-61bf6c080437?w=400&q=80', highlight: 'Maasai Mara · Serengeti · Amboseli' },
-  { name: 'Cape Town', country: 'South Africa', flag: '🇿🇦', image: 'https://images.unsplash.com/photo-1580060839134-75a5edca2e99?w=400&q=80', highlight: 'Table Mountain · Winelands · Garden Route' },
-  { name: 'Zanzibar', country: 'Tanzania', flag: '🇹🇿', image: 'https://images.unsplash.com/photo-1586861203927-800a5acddffd?w=400&q=80', highlight: 'Stone Town · Nungwi · Paje Beach' },
-  { name: 'Abuja', country: 'Nigeria', flag: '🇳🇬', image: 'https://images.unsplash.com/photo-1534430480872-3498386e7856?w=400&q=80', highlight: 'Aso Rock · Millennium Park · Wuse' },
+  { name: 'Nigeria', country: 'Nigeria', flag: '🇳🇬', image: 'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?w=800&q=80', highlight: 'Eko Atlantic · Victoria Island · Lekki' },
+  { name: 'Accra', country: 'Ghana', flag: '🇬🇭', image: 'https://images.unsplash.com/photo-1569288052389-dac9b0ac9eac?w=800&q=80', highlight: 'Osu · Labadi Beach · Cape Coast' },
+  { name: 'Nairobi', country: 'Kenya', flag: '🇰🇪', image: 'https://images.unsplash.com/photo-1611348586804-61bf6c080437?w=800&q=80', highlight: 'Maasai Mara · Serengeti · Amboseli' },
+  { name: 'Cape Town', country: 'South Africa', flag: '🇿🇦', image: 'https://images.unsplash.com/photo-1580060839134-75a5edca2e99?w=800&q=80', highlight: 'Table Mountain · Winelands · Garden Route' },
+  { name: 'Zanzibar', country: 'Tanzania', flag: '🇹🇿', image: 'https://images.unsplash.com/photo-1586861203927-800a5acdcc4d?w=800&q=80', highlight: 'Stone Town · Nungwi · Paje Beach' },
+  { name: 'Abuja', country: 'Nigeria', flag: '🇳🇬', image: 'https://images.unsplash.com/photo-1609340546145-9c970dfe3743?w=800&q=80', highlight: 'Aso Rock · Millennium Park · Wuse' },
   { name: 'Marrakech', country: 'Morocco', flag: '🇲🇦', image: 'https://images.unsplash.com/photo-1539020140153-e479b8c22e70?w=400&q=80', highlight: 'Medina · Jemaa el-Fna · Atlas Mountains' },
   { name: 'Cairo', country: 'Egypt', flag: '🇪🇬', image: 'https://images.unsplash.com/photo-1553913861-c0fddf2619ee?w=400&q=80', highlight: 'Pyramids · Nile · Khan el-Khalili' },
 ]
@@ -55,7 +55,7 @@ export default function AfricaPage() {
           <h2 className="font-display text-3xl font-bold text-white mb-6">Top <span className="text-gold-gradient">Destinations</span></h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {destinations.map((dest) => (
-              <Link key={dest.name} href={`/destinations/${dest.name.toLowerCase().replace(/\s+/g, '-')}`} className="group relative overflow-hidden rounded-2xl hover-lift gold-border" style={{ height: '200px' }}>
+              <Link key={dest.name} href={dest.name === 'Nigeria' ? '/destinations/lagos' : `/destinations/${dest.name.toLowerCase().replace(/\s+/g, '-')}`} className="group relative overflow-hidden rounded-2xl hover-lift gold-border" style={{ height: '200px' }}>
                 <div className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" style={{ backgroundImage: `url(${dest.image})` }} />
                 <div className="absolute inset-0 bg-gradient-to-t from-tralvana-black/90 to-transparent" />
                 <div className="absolute top-3 left-3 text-xl">{dest.flag}</div>
