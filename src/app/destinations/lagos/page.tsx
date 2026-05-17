@@ -14,7 +14,7 @@ export default function LagosPage() {
         className="relative flex items-end"
         style={{
           height: '50vh', minHeight: '350px',
-          backgroundImage: 'url(https://images.unsplash.com/photo-1534430480872-3498386e7856?w=1400&q=80)',
+          backgroundImage: 'url(https://images.unsplash.com/photo-1618510578682-49a2d786d91a?w=1400&q=80)',
           backgroundSize: 'cover', backgroundPosition: 'center',
         }}
       >
